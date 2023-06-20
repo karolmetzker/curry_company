@@ -146,7 +146,7 @@ with st.container():
         
 with st.container():
         st.markdown( """---""" )
-        st.title( "Distribuição do Tempo" )
+        
         
         #col1, col_extra, col2 = st.columns( 3, gap ="large" )
         with col1:
