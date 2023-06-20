@@ -129,6 +129,7 @@ with tab1:
         
 with st.container():
         st.markdown( """---""" )
+        st.title( "Distribuição do Tempo" )
         
         df_aux = df.loc[:, ['City', 'Time_taken(min)']].groupby( 'City' ).agg( {'Time_taken(min)': ['mean', 'std']} )
         df_aux.columns = ['avg_time', 'std_time']
