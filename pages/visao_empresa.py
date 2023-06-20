@@ -7,8 +7,10 @@ import streamlit as st
 from PIL import Image
 import folium
 from streamlit_folium import folium_static
+st.set_page_config( page_title='Visão Empresa', page_icon='📈', layout='wide' )
 
-df_raw = pd.read_csv('train.csv')
+
+df_raw = pd.read_csv(r'C:\Users\kmetzker\Downloads\archive(3)\train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
@@ -83,7 +85,6 @@ df= df.loc[linhas_selecionadas, :]
 '''
 st.dataframe ( df )
 
-st.set_page_config( page_title='Visão Empresa', page_icon='📈', layout='wide' )
 
 #=====================
 # Layout
