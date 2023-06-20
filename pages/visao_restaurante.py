@@ -10,7 +10,9 @@ from streamlit_folium import folium_static
 import datetime
 import plotly.graph_objects as go
 
-df_raw = pd.read_csv('train.csv')
+st.set_page_config( page_title='Visão Restaurantes', page_icon='🍽️', layout='wide' )
+
+df_raw = pd.read_csv(r'C:\Users\kmetzker\Downloads\archive(3)\train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
@@ -65,7 +67,6 @@ print('estouaqui')
 #=====================
 #streamlit
 st.header('Marketplace Visão Restaurantes')
-st.set_page_config( page_title='Visão Restaurantes', page_icon='🍽️', layout='wide' )
 
 
 #=====================
