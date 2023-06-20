@@ -15,7 +15,7 @@ if  st.session_state['answer'] in realans:
 elif st.session_state['answer'] not in realans:
         answerStat = "incorrect"
 
-df_raw = pd.read_csv(r'C:\Users\kmetzker\Downloads\archive(3)\train.csv')
+df_raw = pd.read_csv('train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
