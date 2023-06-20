@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 
 st.set_page_config( page_title='Visão Restaurantes', page_icon='🍽️', layout='wide' )
 
-df_raw = pd.read_csv(r'C:\Users\kmetzker\Downloads\archive(3)\train.csv')
+df_raw = pd.read_csv('train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
@@ -73,7 +73,7 @@ st.header('Marketplace Visão Restaurantes')
 #Barra lateral
 #=====================
 
-image = Image.open(r'C:\Users\kmetzker\Documents\Projetos\.vscode\logo.jpg')
+image = Image.open('logo.jpg')
 st.sidebar.image(image,width=40)
 st.sidebar.markdown('# Curry Company')
 st.sidebar.markdown('## Best delivery in Town')
