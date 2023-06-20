@@ -8,7 +8,7 @@ from PIL import Image
 import folium
 from streamlit_folium import folium_static
 
-df_raw = pd.read_csv(train.csv')
+df_raw = pd.read_csv('train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
