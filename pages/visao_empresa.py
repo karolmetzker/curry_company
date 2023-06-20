@@ -8,13 +8,6 @@ from PIL import Image
 import folium
 from streamlit_folium import folium_static
 st.set_page_config( page_title='Visão Empresa', page_icon='📈', layout='wide' )
-
-st.session_state['answer'] = ''
-if  st.session_state['answer'] in realans:
-        answerStat = "correct"
-elif st.session_state['answer'] not in realans:
-        answerStat = "incorrect"
-
 df_raw = pd.read_csv('train.csv')
 df = df_raw.copy()
 
