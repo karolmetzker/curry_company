@@ -12,7 +12,7 @@ import datetime
 
 st.set_page_config( page_title='Visão Entregadores', page_icon='🚚', layout='wide' )
 
-df_raw = pd.read_csv(r'C:\Users\kmetzker\Downloads\archive(3)\train.csv')
+df_raw = pd.read_csv('train.csv')
 df = df_raw.copy()
 
 # Remover spaco da string
