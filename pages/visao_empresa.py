@@ -74,8 +74,8 @@ traffic_options = st.sidebar.multiselect(
     ('Baixo', 'Médio','Alto','Congestionamento'))
 st.sidebar.markdown('''---''')
 
-linhas_selecionadas = df['Order_Date'] < date_slider #filtrar do inicio até essa data
-df= df.loc[linhas_selecionadas, :]
+#linhas_selecionadas = df['Order_Date'] < date_slider #filtrar do inicio até essa data
+#df= df.loc[linhas_selecionadas, :]
 #st.dataframe ( df )
 
 linhas_selecionadas =  df['Road_traffic_density'].isin( traffic_options )
