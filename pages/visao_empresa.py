@@ -78,9 +78,9 @@ linhas_selecionadas = df['Order_Date'] < date_slider #filtrar do inicio até ess
 df= df.loc[linhas_selecionadas, :]
 #st.dataframe ( df )
 
-'''linhas_selecionadas =  df['Road_traffic_density'].isin( traffic_options )
+linhas_selecionadas =  df['Road_traffic_density'].isin( traffic_options )
 df= df.loc[linhas_selecionadas, :]
-'''
+
 st.dataframe ( df )
 
 
