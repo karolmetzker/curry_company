@@ -73,7 +73,7 @@ st.header('Marketplace Visão Entregadores')
 #Barra lateral
 #=====================
 
-image = Image.open(r'C:\Users\kmetzker\Documents\Projetos\.vscode\logo.jpg')
+image = Image.open('logo.jpg')
 st.sidebar.image(image,width=40)
 st.sidebar.markdown('# Curry Company')
 st.sidebar.markdown('## Best delivery in Town')
